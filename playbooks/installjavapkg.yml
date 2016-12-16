@@ -1,0 +1,17 @@
+---
+- hosts: windows
+
+  tasks:
+   - name: Copy Installer to client
+     win_copy:
+       src: files/java_8_111.exe
+       dest: C:\
+   - name: Java 8 Update 111
+     win_package: 
+       path: C:\\java_8_111.exe
+       product_id: "{26A24AE4-039D-4CA4-87B4-2F64180111F0}"
+       state: Present
+   - name: remove files
+     win_file:
+       path: C:        java_8_111.exe
+       state: absent

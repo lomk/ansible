@@ -1,0 +1,14 @@
+---
+- hosts: windows
+
+  tasks:
+   - name: Test that my module works
+     testing:
+     register: result
+   - debug: var=result 
+   - name: get info
+#     raw: "powershell -Command Get-WmiObject -Class Win32_Product"
+     testmodule: name={{result}}
+     register: msg
+   - debug: var=msg
+#   - set_fact: packages={{ msg.stdout_lines }}

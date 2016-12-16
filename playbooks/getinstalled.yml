@@ -1,0 +1,16 @@
+---
+- hosts: windows
+
+  tasks:
+   - name: Copy Installer to client
+     win_copy:
+       src: files/Get-RemoteProgram.ps1
+       dest: C:\
+   - name: get info
+     raw: powershell -Command C:\Get-RemoteProgram.ps1
+     register: msg32
+   - debug: var=msg32.stdout_lines
+   - name: remove files
+     win_file:
+       path: C:\Get-RemoteProgram.ps1
+       state: absent

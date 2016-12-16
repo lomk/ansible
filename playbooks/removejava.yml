@@ -1,0 +1,5 @@
+---
+- hosts: windows
+
+  tasks:
+  - win_command: msiexec.exe /x {26A24AE4-039D-4CA4-87B4-2F64180111F0} /qn /norestart

@@ -1,0 +1,59 @@
+---
+- hosts: windows
+
+  tasks:
+   - name: get info
+     raw: powershell -Command Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*
+     register: result1
+#   - name: create file
+#     local_action: shell echo {{ inventory_hostname }} >> /tmp/222
+   - name: save
+     local_action: copy content={{ inventory_hostname }}{{ result1.stdout }} dest=/tmp/{{ inventory_hostname }}
+   - name: get clear 1
+     local_action: shell /etc/ansible/bigparse.py /tmp/{{ inventory_hostname }} Java >> /tmp/222
+     register: msg32
+
+   - name: get info 2
+     raw: powershell -Command Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*
+     register: result2
+   - name: save next
+     local_action: copy content={{ inventory_hostname }}{{ result2.stdout }} dest=/tmp/{{ inventory_hostname }}
+   - name: get clear 2
+     local_action: shell /etc/ansible/bigparse.py /tmp/{{ inventory_hostname }} Java >> /tmp/222
+     register: msg64
+#   - name: get clear 2
+#     local_action: shell echo {{ inventory_hostname }} >> /tmp/222 && /etc/ansible/bigparse.py /tmp/{{ inventory_hostname }}f >> /tmp/222 && /etc/ansible/bigparse.py /tmp/{{ inventory_hostname }}s >> /tmp/222
+#     register: msg64
+   - name: del file
+     local_action: shell rm -f /tmp/{{ inventory_hostname }}*
+
+#   - debug: var=msg32.stdout_lines
+#   - debug: var=msg64.stdout_lines
+
+
+
+- hosts: localhost
+
+  tasks:
+   - name: get oldname
+     shell: cat /tmp/222
+     register: info
+   - debug: var=info.stdout_lines
+   - name: remove file
+     shell: rm -f /tmp/222
+
+#     register: msg2
+#   - name: set fact
+#     set_fact: my_var='{{ oldhost.stdout }}'
+#   - name: set fact2
+#     set_fact: my_var2= {{hostvars['{{ oldhost.stdout }}']['msg32']}}
+
+
+#   - name: parse
+#     testmodule: name={{ msg2.stdout }}
+#     testmodule: name={{ hostvars['{{ my_var }}']['msg32'] }}
+#     register: msg
+#   - debug: var=hostvars['{{ name.stdout }}']['msg32']
+#   - debug: var=my_var2
+#   - debug: var=msg
+##   - set_fact: packages={{ msg.stdout_lines }}
