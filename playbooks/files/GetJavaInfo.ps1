@@ -53,7 +53,7 @@ PROCESS {
                 #$OutputObj | Add-Member -MemberType NoteProperty -Name ComputerName -Value $Computer.ToUpper()
                 $OutputObj | Add-Member -MemberType NoteProperty -Name AppName -Value $AppDisplayName
                 $OutputObj | Add-Member -MemberType NoteProperty -Name AppVersion -Value $AppVersion
-                $OutputObj | Add-Member -MemberType NoteProperty -Name AppVendor -Value $AppPublisher
+                #$OutputObj | Add-Member -MemberType NoteProperty -Name AppVendor -Value $AppPublisher
                 $OutputObj | Add-Member -MemberType NoteProperty -Name InstalledDate -Value $AppInstalledDate
                 $OutputObj | Add-Member -MemberType NoteProperty -Name UninstallKey -Value $AppUninstall
                 #$OutputObj | Add-Member -MemberType NoteProperty -Name AppGUID -Value $AppGUID
@@ -72,7 +72,7 @@ PROCESS {
     
     foreach($Computer in $ComputerName)
     {
-        Write-Output "Computer: $Computer" 
+        #Write-Output "Computer: $Computer" 
         if(Test-Connection -ComputerName $Computer -Count 1 -ea 0)
         {
             # Get the architecture 32/64 bit
