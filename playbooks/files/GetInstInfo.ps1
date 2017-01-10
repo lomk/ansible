@@ -70,7 +70,7 @@ PROCESS {
     
     foreach($Computer in $ComputerName)
     {
-        #Write-Output "Computer: $Computer" 
+        Write-Output "Computer: $Computer" 
         if(Test-Connection -ComputerName $Computer -Count 1 -ea 0)
         {
             # Get the architecture 32/64 bit
