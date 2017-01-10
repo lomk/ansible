@@ -47,7 +47,7 @@ PROCESS {
             $AppInstalledDate = $($AppDetails.GetValue("InstallDate"))
             $AppUninstall = $($AppDetails.GetValue("UninstallString"))
             if(!$AppDisplayName) { continue }
-            if($AppDisplayName -like '*Java*')
+            if($AppDisplayName -like '*Java*' -And $AppPublisher -like 'Oracle*')
             { 
                 $OutputObj = New-Object -TypeName PSobject
                 $OutputObj | Add-Member -MemberType NoteProperty -Name ComputerName -Value $Computer.ToUpper()
