@@ -1,0 +1,8 @@
+---
+- hosts: adal_websocket_1,adal_webspcket_2
+  tasks:
+
+    name: deploy adal backend
+    script: /home/nginx/deployjobs/deployadal.sh
+    become: yes
+    become_user: nginx

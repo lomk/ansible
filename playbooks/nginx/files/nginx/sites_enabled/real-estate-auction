@@ -1,0 +1,170 @@
+# Backend
+
+server {
+        include                 template/listen_http;
+        server_name             adal.astana.kz www.adal.astana.kz;
+        include                 template/letsencryptssl;
+	include			template/https_redirect;
+}
+
+
+server {
+        include                 template/listen_http;
+        server_name             api.adal.astana.kz;
+        include                 template/letsencryptssl;
+	include			template/https_redirect;
+}
+
+
+server {
+        include                 template/listen_http;
+        server_name             ws.adal.astana.kz;
+        include                 template/letsencryptssl;
+	include			template/https_redirect;
+}
+
+server {
+        include                 template/listen_https;
+        server_name             api.adal.astana.kz;
+        set                     $server_url     'api.adal.astana.kz';
+#        set                     $root_path      '/var/www/adal.astana.kz/web';
+        set                     $root_path      '/home/nginx/adal.astana.kz/web';
+        set                     $index_file     'app.php';
+        root                    $root_path;
+        index                   $index_file;
+        fastcgi_index           $index_file;
+        include                 template/letsencryptssl;
+        ssl_certificate         /etc/letsencrypt/live/api.adal.astana.kz/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/api.adal.astana.kz/privkey.pem;
+        client_max_body_size    15m;
+
+#        include                 template/cache_rules;
+        include                 fastcgi_params;
+        access_log              /var/log/nginx/api.adal.astana.kz.log;
+        error_log               /var/log/nginx/api.adal.astana.kz.error.log error;
+
+        location /uploads {
+                            alias /home/nginx/adal.astana.kz/web/uploads;
+        }
+
+        location ~ (app_dev\.php|_profiler) { return 403; }
+        location  / {
+#            include template/access_rules;
+            try_files $uri /$index_file$is_args$args;
+	}
+
+        location ~ \.php {
+                include                         fastcgi_params;
+		fastcgi_read_timeout  3600;
+		fastcgi_split_path_info         ^(.+\.php)(.*)$;
+		fastcgi_param PATH_INFO         $fastcgi_path_info;
+		fastcgi_param PATH_TRANSLATED   $document_root$fastcgi_path_info;
+		fastcgi_param SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+		fastcgi_pass                    backend;
+	}
+
+
+#	location ~ \.php {
+#        	    try_files $uri /$index_file$is_args$args;
+#		include                         fastcgi_params;
+#		fastcgi_split_path_info         ^(.+\.php)(.*)$;
+#		fastcgi_param PATH_INFO         $fastcgi_path_info;
+#		fastcgi_param PATH_TRANSLATED   $document_root$fastcgi_path_info;
+#		fastcgi_index			$index_file;
+#		fastcgi_param SCRIPT_FILENAME   $document_root$fastcgi_script_name;
+#		fastcgi_pass                    backend;
+#	}                                                                                                                }
+}
+
+
+
+
+
+
+
+server {
+        include                 template/listen_https;
+        server_name             2api.adal.astana.kz;
+        set                     $server_url     'api.adal.astana.kz';
+        set                     $root_path      '/var/www/real-estate-auction/web';
+        include                 template/letsencryptssl;
+	ssl_certificate         /etc/letsencrypt/live/api.adal.astana.kz/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/api.adal.astana.kz/privkey.pem;
+	client_max_body_size    15m;
+
+        access_log              /var/log/nginx/api.adal.astana.kz.log;
+        error_log               /var/log/nginx/api.adal.astana.kz.error.log error;
+
+        location / {
+#    		include template/access_rules;
+                gzip                            off;
+                proxy_request_buffering         off;
+                proxy_read_timeout              60;
+                proxy_connect_timeout           60;
+                proxy_redirect                  off;
+                proxy_http_version              1.1;
+                proxy_set_header                Host            $http_host;
+                proxy_set_header                X-Real-IP       $remote_addr;
+                proxy_set_header                X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header                X-Frame-Options SAMEORIGIN;
+                proxy_set_header                X-NginX-Proxy   true;
+                proxy_pass                      http://backend;
+        }
+
+}
+
+# Frontend
+server {
+        include                 template/listen_https;
+        server_name             adal.astana.kz;
+        set                     $server_url     'adal.astana.kz';
+        access_log              /var/log/nginx/adal.astana.kz.access.log;
+        error_log               /var/log/nginx/adal.astana.kz.error.log error;
+       ssl_certificate         /etc/letsencrypt/live/adal.astana.kz/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/adal.astana.kz/privkey.pem;
+
+        include                 template/letsencryptssl;
+
+	add_header X-Frame-Options sameorigin;
+
+        location / {
+
+                gzip                            off;
+                proxy_request_buffering         off;
+                proxy_read_timeout              60;
+                proxy_connect_timeout           60;
+                proxy_redirect                  off;
+                proxy_http_version              1.1;
+                proxy_set_header                Host            $http_host;
+                proxy_set_header                X-Real-IP       $remote_addr;
+                proxy_set_header                X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header                X-Frame-Options SAMEORIGIN;
+                proxy_set_header                X-NginX-Proxy   true;
+                proxy_pass                      http://frontend;
+        }
+}
+
+server {
+        include                 template/listen_https;
+        server_name             ws.adal.astana.kz;
+        set                     $server_url     'ws.adal.astana.kz';
+        access_log              /var/log/nginx/ws.adal.astana.kz.access.log;
+        error_log               /var/log/nginx/ws.adal.astana.kz.error.log error;
+        ssl_certificate         /etc/letsencrypt/live/ws.adal.astana.kz/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/ws.adal.astana.kz/privkey.pem;
+        include                 template/letsencryptssl;
+        location / {
+
+                gzip                            off;
+                proxy_request_buffering         off;
+                proxy_read_timeout              60;
+                proxy_connect_timeout           60;
+                proxy_redirect                  off;
+                proxy_http_version              1.1;
+                proxy_set_header                Upgrade $http_upgrade;
+                proxy_set_header                Connection "Upgrade";
+                proxy_pass                      http://websocket;
+        }
+}
+
+

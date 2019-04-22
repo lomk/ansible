@@ -1,0 +1,28 @@
+---
+- hosts: spizhenko_webserver
+  tasks:
+
+  - name: Remove firewalld
+    yum:
+      name: firewalld
+      state: absent
+
+  - name: install iptables-services
+    yum: 
+      name: iptables-services
+      state: latest
+
+  - name: install ipset
+    yum: 
+      name: ipset
+      state: latest
+
+  - name: copy scripts
+    copy:
+      src: /etc/ansible/playbooks/iptables/files/scripts
+      dest: /root/scripts/iptables
+      directory_mode: yes
+      owner: root
+      group: root
+      mode: 0700
+

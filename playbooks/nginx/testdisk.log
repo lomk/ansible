@@ -1,0 +1,749 @@
+
+
+Fri Apr  5 17:45:34 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 4.15.0-46-generic (#49-Ubuntu SMP Wed Feb 6 09:33:07 UTC 2019) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       500118192 sectors
+/dev/sda: user_max   500118192 sectors
+/dev/sda: native_max 500118192 sectors
+/dev/sda: dco        500118192 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 256 GB / 238 GiB - CHS 31130 255 63, sector size=512 - Samsung SSD 860 PRO 256GB, S/N:S418NF0K335363X, FW:RVM01B6Q
+
+Partition table type (auto): Intel
+Disk /dev/sda - 256 GB / 238 GiB - Samsung SSD 860 PRO 256GB
+Partition table type: Intel
+
+Interface Advanced
+Geometry from i386 MBR: head=255 sector=63
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+search_superblock
+
+recover_EXT2: s_block_group_nr=0/1907, s_mnt_count=70/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 2 (block=0, blocksize=4096)
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 262144 (block=32768, blocksize=4096)
+
+block_group_nr 3
+
+recover_EXT2: "e2fsck -b 98304 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=3/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 786432 (block=98304, blocksize=4096)
+
+block_group_nr 5
+
+recover_EXT2: "e2fsck -b 163840 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=5/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 1310720 (block=163840, blocksize=4096)
+
+block_group_nr 7
+
+recover_EXT2: "e2fsck -b 229376 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=7/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 1835008 (block=229376, blocksize=4096)
+
+block_group_nr 9
+
+recover_EXT2: "e2fsck -b 294912 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=9/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 2359296 (block=294912, blocksize=4096)
+
+block_group_nr 25
+
+recover_EXT2: "e2fsck -b 819200 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=25/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 6553600 (block=819200, blocksize=4096)
+
+block_group_nr 27
+
+recover_EXT2: "e2fsck -b 884736 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=27/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 7077888 (block=884736, blocksize=4096)
+
+block_group_nr 49
+
+recover_EXT2: "e2fsck -b 1605632 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=49/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 12845056 (block=1605632, blocksize=4096)
+
+block_group_nr 81
+
+recover_EXT2: "e2fsck -b 2654208 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=81/1907, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 62514432
+recover_EXT2: part_size 500115456
+Ext2 superblock found at sector 21233664 (block=2654208, blocksize=4096)
+  Linux                    0  32 33 31130 223  5  500115456
+superblock 0, blocksize=4096 []
+superblock 32768, blocksize=4096 []
+superblock 98304, blocksize=4096 []
+superblock 163840, blocksize=4096 []
+superblock 229376, blocksize=4096 []
+superblock 294912, blocksize=4096 []
+superblock 819200, blocksize=4096 []
+superblock 884736, blocksize=4096 []
+superblock 1605632, blocksize=4096 []
+superblock 2654208, blocksize=4096 []
+
+To repair the filesystem using alternate superblock, run
+fsck.ext4 -p -b superblock -B blocksize device
+
+
+dir_partition inode=2
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+      11 drwx------     0      0     16384  3-Aug-2018 16:17 lost+found
+      12 -rw-------     0      0 2147483648  3-Aug-2018 16:17 swapfile
+ 9437185 drwxr-xr-x     0      0     12288  4-Apr-2019 16:17 etc
+ 3670017 drwxr-xr-x     0      0      4096 13-Aug-2018 23:09 media
+ 5767169 drwxr-xr-x     0      0      4096 26-Apr-2018 21:30 var
+ 11272193 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 bin
+ 15466497 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 boot
+ 8912897 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 dev
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 home
+ 14155777 drwxr-xr-x     0      0      4096  1-Jan-2019 19:44 lib
+ 11403265 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 lib64
+ 12845057 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 mnt
+ 12582913 drwxr-xr-x     0      0      4096 27-Mar-2019 14:36 opt
+ 9961473 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 proc
+  786433 drwx------     0      0      4096 29-Dec-2018 16:40 root
+ 7864321 drwxr-xr-x     0      0      4096 26-Apr-2018 21:28 run
+ 5898241 drwxr-xr-x     0      0     12288 27-Mar-2019 10:07 sbin
+ 3801089 drwxr-xr-x     0      0      4096 21-Mar-2019 20:53 snap
+ 12713985 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 srv
+ 3932161 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 sys
+ 7077889 drwxrwxrwt     0      0      4096  5-Apr-2019 17:42 tmp
+ 12058625 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 usr
+      16 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img
+      15 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img.old
+      13 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz
+      17 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz.old
+ 7995393 drwxrwxr-x     0      0      4096  3-Aug-2018 16:19 cdrom
+      14 -rw-r--r--     0      0         0 26-Mar-2019 15:42 0
+ 9699329 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 docker
+
+dir_partition inode=3407873
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 owner
+
+dir_partition inode=3407874
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home/owner
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 .
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 ..
+ 3407875 -rw-r--r--  1000   1000       807  3-Aug-2018 16:19 .profile
+ 3407876 -rw-r--r--  1000   1000      3771  3-Aug-2018 16:19 .bashrc
+ 3407877 -rw-r--r--  1000   1000       220  3-Aug-2018 16:19 .bash_logout
+ 3407878 -rw-r--r--  1000   1000      8980  3-Aug-2018 16:19 examples.desktop
+ 3407879 drwx------  1000   1000      4096  3-Aug-2018 17:02 .gnupg
+ 3407881 drwx------  1000   1000      4096 27-Mar-2019 14:36 .cache
+ 3407882 drwx------  1000   1000      4096  3-Aug-2018 16:37 .local
+ 3407890 drwx------  1000   1000      4096  5-Apr-2019 17:21 .config
+ 3407939 drwxr-xr-x  1000   1000      4096  1-Jan-2019 19:43 Desktop
+ 3407942 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Public
+ 3407887 -rw-------  1000   1000     16912  4-Apr-2019 11:33 .ICEauthority
+ 3407940 drwxr-xr-x  1000   1000     12288  5-Apr-2019 09:42 Downloads
+ 3407941 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Templates
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 Documents
+ 3407944 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Music
+ 3407945 drwxr-xr-x  1000   1000      4096  4-Apr-2019 11:24 Pictures
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Videos
+ 3408066 -rw-r--r--  1000   1000         0  3-Aug-2018 16:38 .sudo_as_admin_successful
+ 3408059 -rw-------  1000   1000     17215  5-Apr-2019 17:00 .bash_history
+X3408067 -rw-------  1000   1000      4839  5-Apr-2019 17:30 .ssh
+ 3408998 drwx------  1000   1000      4096 13-Aug-2018 23:27 .pki
+ 3409409 drwx------  1000   1000      4096 13-Aug-2018 23:28 .gnome
+ 3415202 drwx------  1000   1000      4096 24-Aug-2018 08:37 .mozilla
+ 3411080 drwxr-xr-x  1000   1000      4096 17-Feb-2019 17:36 snap
+ 3412377 drwx------     0      0      4096 12-Sep-2018 15:42 .dbus
+ 3419139 -rw-r--r--  1000   1000     18083 12-Sep-2018 23:40 materynko.ovpn
+ 3419364 -rw-r--r--     0      0        72 12-Sep-2018 23:48 .selected_editor
+ 3425267 drwx------  1000   1000      4096  4-Apr-2019 11:33 .gconf
+ 3538959 drwxrwxr-x  1000   1000      4096 26-Mar-2019 15:43 .ViberPC
+ 3543960 drwxr-xr-x  1000   1000      4096  1-Oct-2018 14:36 .aws
+ 3544256 drwx------  1000   1000      4096  2-Oct-2018 12:32 .mysql
+ 3426401 -rw-r--r--  1000   1000     82272 11-Sep-2015 11:28 alien_8.95_all.deb
+ 3431328 -rwxr-xr-x  1000   1000     73577 17-Dec-2018 18:37 passwd_gns.xlsx
+ 3431468 -rw-r--r--  1000   1000        68 17-Dec-2018 18:37 .~lock.passwd_gns.xlsx#
+ 3804132 drwxr-xr-x  1000   1000      4096 29-Dec-2018 16:51 .torbrowser
+ 3802306 drwxrwxr-x  1000   1000      4096  1-Jan-2019 20:06 .steam
+ 3410703 lrwxrwxrwx  1000   1000        30  1-Jan-2019 20:06 .steampath
+ 3410753 lrwxrwxrwx  1000   1000        28  1-Jan-2019 20:06 .steampid
+ 3417643 -rw-------  1000   1000       256  1-Jan-2019 19:46 .pulse-cookie
+ 3428527 -rw-r--r--  1000   1000   2361282  3-Jan-2019 23:25 gnsitcom_03_01_2019_23_11.sql
+ 3428750 -rw-r--r--  1000   1000  95337184  3-Jan-2019 23:35 gnsitcom.tar.gz
+ 3801145 drwxr-xr-x  1000   1000      4096 28-Jan-2019 23:42 kvm
+ 3418267 -rw-r--r--  1000   1000     18098 31-Jan-2019 17:38 darina-varicheva.ovpn
+ 3408814 -rwxr-xr-x  1000   1000 142919185 12-Feb-2019 23:37 12.mp4
+ 3419533 -rw-r--r--  1000   1000 137002554 12-Feb-2019 23:39 output.mp4
+ 4331725 drwxr-xr-x  1000   1000      4096 17-Feb-2019 09:50 mail.gns-it.com
+ 3421435 -rw-r--r--  1000   1000     13021 18-Feb-2019 22:19 materynko_gns.ovpn
+ 4333043 drwxrwxr-x  1000   1000      4096  4-Mar-2019 14:24 .synergy
+ 3421324 -rw-------  1000   1000      1024  5-Apr-2019 09:42 .rnd
+ 3427860 -rw-r--r--  1000   1000   1796759  6-Mar-2019 13:07 CatenaERP_RU.pdf
+ 3414354 -rw-------     0      0     12871  5-Apr-2019 17:09 .viminfo
+ 3429500 -rw-r--r--  1000   1000       146 11-Mar-2019 10:04 synergy.conf
+ 4333202 drwxrwxr-x  1000   1000      4096 21-Mar-2019 23:44 Calibre Library
+ 3413460 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4067962 drwx------     0      0      4096 27-Mar-2019 10:37 .docker
+ 4067972 drwxrwxr-x  1000   1000      4096 27-Mar-2019 17:00 .zoom
+ 3408305 -rw-r--r--  1000   1000  85634598 28-Mar-2019 12:44 270320191728gioschool.com.sql
+ 3431949 -rw-r--r--  1000   1000    867558 31-Mar-2019 22:46 lbs_ltclub_dmc_com.sql
+ 3432026 -rw-r--r--  1000   1000  13019094 31-Mar-2019 23:15 lbs.ltclub-dmc.com.tgz
+ 3432234 -rw-r--r--  1000   1000     28322 31-Mar-2019 23:17 nginx.tgz
+ 4333495 drwx------  1000   1000      4096  2-Apr-2019 10:15 .workrave
+ 3416967 -rw-r--r--  1000   1000     23332  1-Apr-2019 17:11 php56.tgz
+ 3420207 -rw-r--r--  1000   1000      3566  1-Apr-2019 17:31 fullchain.pem
+ 3418485 -rw-r--r--  1000   1000      1704  1-Apr-2019 17:32 privkey.pem
+ 3410363 -rwxr-xr-x  1000   1000   3141152  3-Apr-2019 10:37 ngx_http_brotli_filter_module.so
+ 3411832 -rwxr-xr-x  1000   1000    114520  3-Apr-2019 10:37 ngx_http_brotli_static_module.so
+ 3419648 -rw-r--r--  1000   1000 2615526997  4-Apr-2019 15:40 040420191518.iteacrm_test.sql
+ 3423594 -rw-r--r--  1000   1000 264396274  4-Apr-2019 15:43 040420191518.iteacrm_test.sql.tgz
+ 4980737 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:31 .IdeaIC2019.1
+ 4194364 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:26 idea
+ 4980749 drwxr-xr-x  1000   1000      4096  5-Apr-2019 09:38 .java
+ 4981145 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:33 .android
+ 4981306 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:40 IdeaProjects
+ 4981449 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:41 .m2
+ 3436095 -rw-rw-r--  1000   1000       831  5-Apr-2019 09:38 .S_O_L rc
+ 5115115 drwxrwxr-x  1000   1000      4096  5-Apr-2019 12:08 dumps
+ 3432995 -rw-r--r--  1000   1000     10260  5-Apr-2019 15:34 ansible_nginx.tgz
+ 5115287 drwx------     0      0      4096  5-Apr-2019 17:26 .ansible
+
+dir_partition inode=3407946
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home/owner/Videos
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 .
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 ..
+Directory /home/owner
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 .
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 ..
+ 3407875 -rw-r--r--  1000   1000       807  3-Aug-2018 16:19 .profile
+ 3407876 -rw-r--r--  1000   1000      3771  3-Aug-2018 16:19 .bashrc
+ 3407877 -rw-r--r--  1000   1000       220  3-Aug-2018 16:19 .bash_logout
+ 3407878 -rw-r--r--  1000   1000      8980  3-Aug-2018 16:19 examples.desktop
+ 3407879 drwx------  1000   1000      4096  3-Aug-2018 17:02 .gnupg
+ 3407881 drwx------  1000   1000      4096 27-Mar-2019 14:36 .cache
+ 3407882 drwx------  1000   1000      4096  3-Aug-2018 16:37 .local
+ 3407890 drwx------  1000   1000      4096  5-Apr-2019 17:21 .config
+ 3407939 drwxr-xr-x  1000   1000      4096  1-Jan-2019 19:43 Desktop
+ 3407942 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Public
+ 3407887 -rw-------  1000   1000     16912  4-Apr-2019 11:33 .ICEauthority
+ 3407940 drwxr-xr-x  1000   1000     12288  5-Apr-2019 09:42 Downloads
+ 3407941 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Templates
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 Documents
+ 3407944 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Music
+ 3407945 drwxr-xr-x  1000   1000      4096  4-Apr-2019 11:24 Pictures
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Videos
+ 3408066 -rw-r--r--  1000   1000         0  3-Aug-2018 16:38 .sudo_as_admin_successful
+ 3408059 -rw-------  1000   1000     17215  5-Apr-2019 17:00 .bash_history
+X3408067 -rw-------  1000   1000      4839  5-Apr-2019 17:30 .ssh
+ 3408998 drwx------  1000   1000      4096 13-Aug-2018 23:27 .pki
+ 3409409 drwx------  1000   1000      4096 13-Aug-2018 23:28 .gnome
+ 3415202 drwx------  1000   1000      4096 24-Aug-2018 08:37 .mozilla
+ 3411080 drwxr-xr-x  1000   1000      4096 17-Feb-2019 17:36 snap
+ 3412377 drwx------     0      0      4096 12-Sep-2018 15:42 .dbus
+ 3419139 -rw-r--r--  1000   1000     18083 12-Sep-2018 23:40 materynko.ovpn
+ 3419364 -rw-r--r--     0      0        72 12-Sep-2018 23:48 .selected_editor
+ 3425267 drwx------  1000   1000      4096  4-Apr-2019 11:33 .gconf
+ 3538959 drwxrwxr-x  1000   1000      4096 26-Mar-2019 15:43 .ViberPC
+ 3543960 drwxr-xr-x  1000   1000      4096  1-Oct-2018 14:36 .aws
+ 3544256 drwx------  1000   1000      4096  2-Oct-2018 12:32 .mysql
+ 3426401 -rw-r--r--  1000   1000     82272 11-Sep-2015 11:28 alien_8.95_all.deb
+ 3431328 -rwxr-xr-x  1000   1000     73577 17-Dec-2018 18:37 passwd_gns.xlsx
+ 3431468 -rw-r--r--  1000   1000        68 17-Dec-2018 18:37 .~lock.passwd_gns.xlsx#
+ 3804132 drwxr-xr-x  1000   1000      4096 29-Dec-2018 16:51 .torbrowser
+ 3802306 drwxrwxr-x  1000   1000      4096  1-Jan-2019 20:06 .steam
+ 3410703 lrwxrwxrwx  1000   1000        30  1-Jan-2019 20:06 .steampath
+ 3410753 lrwxrwxrwx  1000   1000        28  1-Jan-2019 20:06 .steampid
+ 3417643 -rw-------  1000   1000       256  1-Jan-2019 19:46 .pulse-cookie
+ 3428527 -rw-r--r--  1000   1000   2361282  3-Jan-2019 23:25 gnsitcom_03_01_2019_23_11.sql
+ 3428750 -rw-r--r--  1000   1000  95337184  3-Jan-2019 23:35 gnsitcom.tar.gz
+ 3801145 drwxr-xr-x  1000   1000      4096 28-Jan-2019 23:42 kvm
+ 3418267 -rw-r--r--  1000   1000     18098 31-Jan-2019 17:38 darina-varicheva.ovpn
+ 3408814 -rwxr-xr-x  1000   1000 142919185 12-Feb-2019 23:37 12.mp4
+ 3419533 -rw-r--r--  1000   1000 137002554 12-Feb-2019 23:39 output.mp4
+ 4331725 drwxr-xr-x  1000   1000      4096 17-Feb-2019 09:50 mail.gns-it.com
+ 3421435 -rw-r--r--  1000   1000     13021 18-Feb-2019 22:19 materynko_gns.ovpn
+ 4333043 drwxrwxr-x  1000   1000      4096  4-Mar-2019 14:24 .synergy
+ 3421324 -rw-------  1000   1000      1024  5-Apr-2019 09:42 .rnd
+ 3427860 -rw-r--r--  1000   1000   1796759  6-Mar-2019 13:07 CatenaERP_RU.pdf
+ 3414354 -rw-------     0      0     12871  5-Apr-2019 17:09 .viminfo
+ 3429500 -rw-r--r--  1000   1000       146 11-Mar-2019 10:04 synergy.conf
+ 4333202 drwxrwxr-x  1000   1000      4096 21-Mar-2019 23:44 Calibre Library
+ 3413460 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4067962 drwx------     0      0      4096 27-Mar-2019 10:37 .docker
+ 4067972 drwxrwxr-x  1000   1000      4096 27-Mar-2019 17:00 .zoom
+ 3408305 -rw-r--r--  1000   1000  85634598 28-Mar-2019 12:44 270320191728gioschool.com.sql
+ 3431949 -rw-r--r--  1000   1000    867558 31-Mar-2019 22:46 lbs_ltclub_dmc_com.sql
+ 3432026 -rw-r--r--  1000   1000  13019094 31-Mar-2019 23:15 lbs.ltclub-dmc.com.tgz
+ 3432234 -rw-r--r--  1000   1000     28322 31-Mar-2019 23:17 nginx.tgz
+ 4333495 drwx------  1000   1000      4096  2-Apr-2019 10:15 .workrave
+ 3416967 -rw-r--r--  1000   1000     23332  1-Apr-2019 17:11 php56.tgz
+ 3420207 -rw-r--r--  1000   1000      3566  1-Apr-2019 17:31 fullchain.pem
+ 3418485 -rw-r--r--  1000   1000      1704  1-Apr-2019 17:32 privkey.pem
+ 3410363 -rwxr-xr-x  1000   1000   3141152  3-Apr-2019 10:37 ngx_http_brotli_filter_module.so
+ 3411832 -rwxr-xr-x  1000   1000    114520  3-Apr-2019 10:37 ngx_http_brotli_static_module.so
+ 3419648 -rw-r--r--  1000   1000 2615526997  4-Apr-2019 15:40 040420191518.iteacrm_test.sql
+ 3423594 -rw-r--r--  1000   1000 264396274  4-Apr-2019 15:43 040420191518.iteacrm_test.sql.tgz
+ 4980737 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:31 .IdeaIC2019.1
+ 4194364 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:26 idea
+ 4980749 drwxr-xr-x  1000   1000      4096  5-Apr-2019 09:38 .java
+ 4981145 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:33 .android
+ 4981306 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:40 IdeaProjects
+ 4981449 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:41 .m2
+ 3436095 -rw-rw-r--  1000   1000       831  5-Apr-2019 09:38 .S_O_L rc
+ 5115115 drwxrwxr-x  1000   1000      4096  5-Apr-2019 12:08 dumps
+ 3432995 -rw-r--r--  1000   1000     10260  5-Apr-2019 15:34 ansible_nginx.tgz
+ 5115287 drwx------     0      0      4096  5-Apr-2019 17:26 .ansible
+Directory /home
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 owner
+
+dir_partition inode=3407874
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home/owner
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 .
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 ..
+ 3407875 -rw-r--r--  1000   1000       807  3-Aug-2018 16:19 .profile
+ 3407876 -rw-r--r--  1000   1000      3771  3-Aug-2018 16:19 .bashrc
+ 3407877 -rw-r--r--  1000   1000       220  3-Aug-2018 16:19 .bash_logout
+ 3407878 -rw-r--r--  1000   1000      8980  3-Aug-2018 16:19 examples.desktop
+ 3407879 drwx------  1000   1000      4096  3-Aug-2018 17:02 .gnupg
+ 3407881 drwx------  1000   1000      4096 27-Mar-2019 14:36 .cache
+ 3407882 drwx------  1000   1000      4096  3-Aug-2018 16:37 .local
+ 3407890 drwx------  1000   1000      4096  5-Apr-2019 17:21 .config
+ 3407939 drwxr-xr-x  1000   1000      4096  1-Jan-2019 19:43 Desktop
+ 3407942 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Public
+ 3407887 -rw-------  1000   1000     16912  4-Apr-2019 11:33 .ICEauthority
+ 3407940 drwxr-xr-x  1000   1000     12288  5-Apr-2019 09:42 Downloads
+ 3407941 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Templates
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 Documents
+ 3407944 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Music
+ 3407945 drwxr-xr-x  1000   1000      4096  4-Apr-2019 11:24 Pictures
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Videos
+ 3408066 -rw-r--r--  1000   1000         0  3-Aug-2018 16:38 .sudo_as_admin_successful
+ 3408059 -rw-------  1000   1000     17215  5-Apr-2019 17:00 .bash_history
+X3408067 -rw-------  1000   1000      4839  5-Apr-2019 17:30 .ssh
+ 3408998 drwx------  1000   1000      4096 13-Aug-2018 23:27 .pki
+ 3409409 drwx------  1000   1000      4096 13-Aug-2018 23:28 .gnome
+ 3415202 drwx------  1000   1000      4096 24-Aug-2018 08:37 .mozilla
+ 3411080 drwxr-xr-x  1000   1000      4096 17-Feb-2019 17:36 snap
+ 3412377 drwx------     0      0      4096 12-Sep-2018 15:42 .dbus
+ 3419139 -rw-r--r--  1000   1000     18083 12-Sep-2018 23:40 materynko.ovpn
+ 3419364 -rw-r--r--     0      0        72 12-Sep-2018 23:48 .selected_editor
+ 3425267 drwx------  1000   1000      4096  4-Apr-2019 11:33 .gconf
+ 3538959 drwxrwxr-x  1000   1000      4096 26-Mar-2019 15:43 .ViberPC
+ 3543960 drwxr-xr-x  1000   1000      4096  1-Oct-2018 14:36 .aws
+ 3544256 drwx------  1000   1000      4096  2-Oct-2018 12:32 .mysql
+ 3426401 -rw-r--r--  1000   1000     82272 11-Sep-2015 11:28 alien_8.95_all.deb
+ 3431328 -rwxr-xr-x  1000   1000     73577 17-Dec-2018 18:37 passwd_gns.xlsx
+ 3431468 -rw-r--r--  1000   1000        68 17-Dec-2018 18:37 .~lock.passwd_gns.xlsx#
+ 3804132 drwxr-xr-x  1000   1000      4096 29-Dec-2018 16:51 .torbrowser
+ 3802306 drwxrwxr-x  1000   1000      4096  1-Jan-2019 20:06 .steam
+ 3410703 lrwxrwxrwx  1000   1000        30  1-Jan-2019 20:06 .steampath
+ 3410753 lrwxrwxrwx  1000   1000        28  1-Jan-2019 20:06 .steampid
+ 3417643 -rw-------  1000   1000       256  1-Jan-2019 19:46 .pulse-cookie
+ 3428527 -rw-r--r--  1000   1000   2361282  3-Jan-2019 23:25 gnsitcom_03_01_2019_23_11.sql
+ 3428750 -rw-r--r--  1000   1000  95337184  3-Jan-2019 23:35 gnsitcom.tar.gz
+ 3801145 drwxr-xr-x  1000   1000      4096 28-Jan-2019 23:42 kvm
+ 3418267 -rw-r--r--  1000   1000     18098 31-Jan-2019 17:38 darina-varicheva.ovpn
+ 3408814 -rwxr-xr-x  1000   1000 142919185 12-Feb-2019 23:37 12.mp4
+ 3419533 -rw-r--r--  1000   1000 137002554 12-Feb-2019 23:39 output.mp4
+ 4331725 drwxr-xr-x  1000   1000      4096 17-Feb-2019 09:50 mail.gns-it.com
+ 3421435 -rw-r--r--  1000   1000     13021 18-Feb-2019 22:19 materynko_gns.ovpn
+ 4333043 drwxrwxr-x  1000   1000      4096  4-Mar-2019 14:24 .synergy
+ 3421324 -rw-------  1000   1000      1024  5-Apr-2019 09:42 .rnd
+ 3427860 -rw-r--r--  1000   1000   1796759  6-Mar-2019 13:07 CatenaERP_RU.pdf
+ 3414354 -rw-------     0      0     12871  5-Apr-2019 17:09 .viminfo
+ 3429500 -rw-r--r--  1000   1000       146 11-Mar-2019 10:04 synergy.conf
+ 4333202 drwxrwxr-x  1000   1000      4096 21-Mar-2019 23:44 Calibre Library
+ 3413460 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4067962 drwx------     0      0      4096 27-Mar-2019 10:37 .docker
+ 4067972 drwxrwxr-x  1000   1000      4096 27-Mar-2019 17:00 .zoom
+ 3408305 -rw-r--r--  1000   1000  85634598 28-Mar-2019 12:44 270320191728gioschool.com.sql
+ 3431949 -rw-r--r--  1000   1000    867558 31-Mar-2019 22:46 lbs_ltclub_dmc_com.sql
+ 3432026 -rw-r--r--  1000   1000  13019094 31-Mar-2019 23:15 lbs.ltclub-dmc.com.tgz
+ 3432234 -rw-r--r--  1000   1000     28322 31-Mar-2019 23:17 nginx.tgz
+ 4333495 drwx------  1000   1000      4096  2-Apr-2019 10:15 .workrave
+ 3416967 -rw-r--r--  1000   1000     23332  1-Apr-2019 17:11 php56.tgz
+ 3420207 -rw-r--r--  1000   1000      3566  1-Apr-2019 17:31 fullchain.pem
+ 3418485 -rw-r--r--  1000   1000      1704  1-Apr-2019 17:32 privkey.pem
+ 3410363 -rwxr-xr-x  1000   1000   3141152  3-Apr-2019 10:37 ngx_http_brotli_filter_module.so
+ 3411832 -rwxr-xr-x  1000   1000    114520  3-Apr-2019 10:37 ngx_http_brotli_static_module.so
+ 3419648 -rw-r--r--  1000   1000 2615526997  4-Apr-2019 15:40 040420191518.iteacrm_test.sql
+ 3423594 -rw-r--r--  1000   1000 264396274  4-Apr-2019 15:43 040420191518.iteacrm_test.sql.tgz
+ 4980737 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:31 .IdeaIC2019.1
+ 4194364 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:26 idea
+ 4980749 drwxr-xr-x  1000   1000      4096  5-Apr-2019 09:38 .java
+ 4981145 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:33 .android
+ 4981306 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:40 IdeaProjects
+ 4981449 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:41 .m2
+ 3436095 -rw-rw-r--  1000   1000       831  5-Apr-2019 09:38 .S_O_L rc
+ 5115115 drwxrwxr-x  1000   1000      4096  5-Apr-2019 12:08 dumps
+ 3432995 -rw-r--r--  1000   1000     10260  5-Apr-2019 15:34 ansible_nginx.tgz
+ 5115287 drwx------     0      0      4096  5-Apr-2019 17:26 .ansible
+
+dir_partition inode=3407943
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home/owner/Documents
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 .
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 ..
+ 3538949 drwxrwxr-x  1000   1000      4096 28-Sep-2018 17:28 Telegram
+ 4718704 drwxrwxr-x  1000   1000      4096  2-Apr-2019 11:35 ViberDownloads
+ 3418464 -rw-r--r--  1000   1000        12  1-Oct-2018 14:18 test.txt
+ 3419439 -r--------  1000   1000      1692  1-Oct-2018 16:10 student3key.pem
+ 3418703 -rw-r--r--  1000   1000        90  1-Oct-2018 14:34 accessaws.txt
+ 3431296 -rw-------  1000   1000      1679  4-Oct-2018 21:55 hostingkey
+ 3431302 -rw-r--r--  1000   1000       390  4-Oct-2018 21:55 hostingkey.pub
+ 3409876 -rwxrwxrwx  1000   1000     73577 13-Oct-2018 21:58 passwd_gns.xlsx
+ 3423861 -rw-------  1000   1000     41493 28-Dec-2018 17:38 passwd_gns.xlsx_0.ods
+ 4333494 drwxr-xr-x  1000   1000      4096 26-Mar-2019 16:36 Serv
+ 3415861 -rwxrwxrwx  1000   1000    180092 19-Dec-2018 15:40 mRemoteNG.xml
+ 3434778 -rw-rw-r--  1000   1000         0  7-Jan-2019 19:54 Крайон (Ли Кэрролл) - Минуя веху.doc
+ 3413101 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4591929 drwxr-xr-x     0      0      4096 25-Mar-2019 16:09 ssh
+ 3419314 -rw-rw-r--  1000   1000      1437 29-Mar-2019 09:53 parameters.yml
+ 3419326 -rw-rw-r--  1000   1000      2224 29-Mar-2019 09:55 parameters.yml.dist
+ 3414333 -rw-r--r--  1000   1000      9916  1-Apr-2019 11:56 qawebsocket.tar.xz
+ 3408837 -rw-rw-r--  1000   1000        68  2-Apr-2019 14:46 .~lock.passwd_gns.xlsx#
+ 4334391 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:58 localnet_rest
+ 3413400 -rw-r--r--  1000   1000  59488526  5-Apr-2019 12:13 adal_astana_kz.sql
+Directory /home/owner
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 .
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 ..
+ 3407875 -rw-r--r--  1000   1000       807  3-Aug-2018 16:19 .profile
+ 3407876 -rw-r--r--  1000   1000      3771  3-Aug-2018 16:19 .bashrc
+ 3407877 -rw-r--r--  1000   1000       220  3-Aug-2018 16:19 .bash_logout
+ 3407878 -rw-r--r--  1000   1000      8980  3-Aug-2018 16:19 examples.desktop
+ 3407879 drwx------  1000   1000      4096  3-Aug-2018 17:02 .gnupg
+ 3407881 drwx------  1000   1000      4096 27-Mar-2019 14:36 .cache
+ 3407882 drwx------  1000   1000      4096  3-Aug-2018 16:37 .local
+ 3407890 drwx------  1000   1000      4096  5-Apr-2019 17:21 .config
+ 3407939 drwxr-xr-x  1000   1000      4096  1-Jan-2019 19:43 Desktop
+ 3407942 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Public
+ 3407887 -rw-------  1000   1000     16912  4-Apr-2019 11:33 .ICEauthority
+ 3407940 drwxr-xr-x  1000   1000     12288  5-Apr-2019 09:42 Downloads
+ 3407941 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Templates
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 Documents
+ 3407944 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Music
+ 3407945 drwxr-xr-x  1000   1000      4096  4-Apr-2019 11:24 Pictures
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Videos
+ 3408066 -rw-r--r--  1000   1000         0  3-Aug-2018 16:38 .sudo_as_admin_successful
+ 3408059 -rw-------  1000   1000     17215  5-Apr-2019 17:00 .bash_history
+X3408067 -rw-------  1000   1000      4839  5-Apr-2019 17:30 .ssh
+ 3408998 drwx------  1000   1000      4096 13-Aug-2018 23:27 .pki
+ 3409409 drwx------  1000   1000      4096 13-Aug-2018 23:28 .gnome
+ 3415202 drwx------  1000   1000      4096 24-Aug-2018 08:37 .mozilla
+ 3411080 drwxr-xr-x  1000   1000      4096 17-Feb-2019 17:36 snap
+ 3412377 drwx------     0      0      4096 12-Sep-2018 15:42 .dbus
+ 3419139 -rw-r--r--  1000   1000     18083 12-Sep-2018 23:40 materynko.ovpn
+ 3419364 -rw-r--r--     0      0        72 12-Sep-2018 23:48 .selected_editor
+ 3425267 drwx------  1000   1000      4096  4-Apr-2019 11:33 .gconf
+ 3538959 drwxrwxr-x  1000   1000      4096 26-Mar-2019 15:43 .ViberPC
+ 3543960 drwxr-xr-x  1000   1000      4096  1-Oct-2018 14:36 .aws
+ 3544256 drwx------  1000   1000      4096  2-Oct-2018 12:32 .mysql
+ 3426401 -rw-r--r--  1000   1000     82272 11-Sep-2015 11:28 alien_8.95_all.deb
+ 3431328 -rwxr-xr-x  1000   1000     73577 17-Dec-2018 18:37 passwd_gns.xlsx
+ 3431468 -rw-r--r--  1000   1000        68 17-Dec-2018 18:37 .~lock.passwd_gns.xlsx#
+ 3804132 drwxr-xr-x  1000   1000      4096 29-Dec-2018 16:51 .torbrowser
+ 3802306 drwxrwxr-x  1000   1000      4096  1-Jan-2019 20:06 .steam
+ 3410703 lrwxrwxrwx  1000   1000        30  1-Jan-2019 20:06 .steampath
+ 3410753 lrwxrwxrwx  1000   1000        28  1-Jan-2019 20:06 .steampid
+ 3417643 -rw-------  1000   1000       256  1-Jan-2019 19:46 .pulse-cookie
+ 3428527 -rw-r--r--  1000   1000   2361282  3-Jan-2019 23:25 gnsitcom_03_01_2019_23_11.sql
+ 3428750 -rw-r--r--  1000   1000  95337184  3-Jan-2019 23:35 gnsitcom.tar.gz
+ 3801145 drwxr-xr-x  1000   1000      4096 28-Jan-2019 23:42 kvm
+ 3418267 -rw-r--r--  1000   1000     18098 31-Jan-2019 17:38 darina-varicheva.ovpn
+ 3408814 -rwxr-xr-x  1000   1000 142919185 12-Feb-2019 23:37 12.mp4
+ 3419533 -rw-r--r--  1000   1000 137002554 12-Feb-2019 23:39 output.mp4
+ 4331725 drwxr-xr-x  1000   1000      4096 17-Feb-2019 09:50 mail.gns-it.com
+ 3421435 -rw-r--r--  1000   1000     13021 18-Feb-2019 22:19 materynko_gns.ovpn
+ 4333043 drwxrwxr-x  1000   1000      4096  4-Mar-2019 14:24 .synergy
+ 3421324 -rw-------  1000   1000      1024  5-Apr-2019 09:42 .rnd
+ 3427860 -rw-r--r--  1000   1000   1796759  6-Mar-2019 13:07 CatenaERP_RU.pdf
+ 3414354 -rw-------     0      0     12871  5-Apr-2019 17:09 .viminfo
+ 3429500 -rw-r--r--  1000   1000       146 11-Mar-2019 10:04 synergy.conf
+ 4333202 drwxrwxr-x  1000   1000      4096 21-Mar-2019 23:44 Calibre Library
+ 3413460 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4067962 drwx------     0      0      4096 27-Mar-2019 10:37 .docker
+ 4067972 drwxrwxr-x  1000   1000      4096 27-Mar-2019 17:00 .zoom
+ 3408305 -rw-r--r--  1000   1000  85634598 28-Mar-2019 12:44 270320191728gioschool.com.sql
+ 3431949 -rw-r--r--  1000   1000    867558 31-Mar-2019 22:46 lbs_ltclub_dmc_com.sql
+ 3432026 -rw-r--r--  1000   1000  13019094 31-Mar-2019 23:15 lbs.ltclub-dmc.com.tgz
+ 3432234 -rw-r--r--  1000   1000     28322 31-Mar-2019 23:17 nginx.tgz
+ 4333495 drwx------  1000   1000      4096  2-Apr-2019 10:15 .workrave
+ 3416967 -rw-r--r--  1000   1000     23332  1-Apr-2019 17:11 php56.tgz
+ 3420207 -rw-r--r--  1000   1000      3566  1-Apr-2019 17:31 fullchain.pem
+ 3418485 -rw-r--r--  1000   1000      1704  1-Apr-2019 17:32 privkey.pem
+ 3410363 -rwxr-xr-x  1000   1000   3141152  3-Apr-2019 10:37 ngx_http_brotli_filter_module.so
+ 3411832 -rwxr-xr-x  1000   1000    114520  3-Apr-2019 10:37 ngx_http_brotli_static_module.so
+ 3419648 -rw-r--r--  1000   1000 2615526997  4-Apr-2019 15:40 040420191518.iteacrm_test.sql
+ 3423594 -rw-r--r--  1000   1000 264396274  4-Apr-2019 15:43 040420191518.iteacrm_test.sql.tgz
+ 4980737 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:31 .IdeaIC2019.1
+ 4194364 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:26 idea
+ 4980749 drwxr-xr-x  1000   1000      4096  5-Apr-2019 09:38 .java
+ 4981145 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:33 .android
+ 4981306 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:40 IdeaProjects
+ 4981449 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:41 .m2
+ 3436095 -rw-rw-r--  1000   1000       831  5-Apr-2019 09:38 .S_O_L rc
+ 5115115 drwxrwxr-x  1000   1000      4096  5-Apr-2019 12:08 dumps
+ 3432995 -rw-r--r--  1000   1000     10260  5-Apr-2019 15:34 ansible_nginx.tgz
+ 5115287 drwx------     0      0      4096  5-Apr-2019 17:26 .ansible
+Directory /home
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 owner
+Directory /
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+      11 drwx------     0      0     16384  3-Aug-2018 16:17 lost+found
+      12 -rw-------     0      0 2147483648  3-Aug-2018 16:17 swapfile
+ 9437185 drwxr-xr-x     0      0     12288  4-Apr-2019 16:17 etc
+ 3670017 drwxr-xr-x     0      0      4096 13-Aug-2018 23:09 media
+ 5767169 drwxr-xr-x     0      0      4096 26-Apr-2018 21:30 var
+ 11272193 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 bin
+ 15466497 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 boot
+ 8912897 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 dev
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 home
+ 14155777 drwxr-xr-x     0      0      4096  1-Jan-2019 19:44 lib
+ 11403265 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 lib64
+ 12845057 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 mnt
+ 12582913 drwxr-xr-x     0      0      4096 27-Mar-2019 14:36 opt
+ 9961473 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 proc
+  786433 drwx------     0      0      4096 29-Dec-2018 16:40 root
+ 7864321 drwxr-xr-x     0      0      4096 26-Apr-2018 21:28 run
+ 5898241 drwxr-xr-x     0      0     12288 27-Mar-2019 10:07 sbin
+ 3801089 drwxr-xr-x     0      0      4096 21-Mar-2019 20:53 snap
+ 12713985 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 srv
+ 3932161 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 sys
+ 7077889 drwxrwxrwt     0      0      4096  5-Apr-2019 17:42 tmp
+ 12058625 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 usr
+      16 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img
+      15 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img.old
+      13 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz
+      17 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz.old
+ 7995393 drwxrwxr-x     0      0      4096  3-Aug-2018 16:19 cdrom
+      14 -rw-r--r--     0      0         0 26-Mar-2019 15:42 0
+ 9699329 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 docker
+
+
+dir_partition inode=2
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+      11 drwx------     0      0     16384  3-Aug-2018 16:17 lost+found
+      12 -rw-------     0      0 2147483648  3-Aug-2018 16:17 swapfile
+ 9437185 drwxr-xr-x     0      0     12288  4-Apr-2019 16:17 etc
+ 3670017 drwxr-xr-x     0      0      4096 13-Aug-2018 23:09 media
+ 5767169 drwxr-xr-x     0      0      4096 26-Apr-2018 21:30 var
+ 11272193 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 bin
+ 15466497 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 boot
+ 8912897 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 dev
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 home
+ 14155777 drwxr-xr-x     0      0      4096  1-Jan-2019 19:44 lib
+ 11403265 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 lib64
+ 12845057 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 mnt
+ 12582913 drwxr-xr-x     0      0      4096 27-Mar-2019 14:36 opt
+ 9961473 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 proc
+  786433 drwx------     0      0      4096 29-Dec-2018 16:40 root
+ 7864321 drwxr-xr-x     0      0      4096 26-Apr-2018 21:28 run
+ 5898241 drwxr-xr-x     0      0     12288 27-Mar-2019 10:07 sbin
+ 3801089 drwxr-xr-x     0      0      4096 21-Mar-2019 20:53 snap
+ 12713985 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 srv
+ 3932161 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 sys
+ 7077889 drwxrwxrwt     0      0      4096  5-Apr-2019 17:42 tmp
+ 12058625 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 usr
+      16 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img
+      15 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img.old
+      13 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz
+      17 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz.old
+ 7995393 drwxrwxr-x     0      0      4096  3-Aug-2018 16:19 cdrom
+      14 -rw-r--r--     0      0         0 26-Mar-2019 15:42 0
+ 9699329 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 docker
+
+dir_partition inode=3407873
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 owner
+
+dir_partition inode=3407874
+ 1 * Linux                    0  32 33 31130 223  5  500115456
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 256 GB / 238 GiB
+Directory /home/owner
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 .
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 ..
+ 3407875 -rw-r--r--  1000   1000       807  3-Aug-2018 16:19 .profile
+ 3407876 -rw-r--r--  1000   1000      3771  3-Aug-2018 16:19 .bashrc
+ 3407877 -rw-r--r--  1000   1000       220  3-Aug-2018 16:19 .bash_logout
+ 3407878 -rw-r--r--  1000   1000      8980  3-Aug-2018 16:19 examples.desktop
+ 3407879 drwx------  1000   1000      4096  3-Aug-2018 17:02 .gnupg
+ 3407881 drwx------  1000   1000      4096 27-Mar-2019 14:36 .cache
+ 3407882 drwx------  1000   1000      4096  3-Aug-2018 16:37 .local
+ 3407890 drwx------  1000   1000      4096  5-Apr-2019 17:21 .config
+ 3407939 drwxr-xr-x  1000   1000      4096  1-Jan-2019 19:43 Desktop
+ 3407942 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Public
+ 3407887 -rw-------  1000   1000     16912  4-Apr-2019 11:33 .ICEauthority
+ 3407940 drwxr-xr-x  1000   1000     12288  5-Apr-2019 09:42 Downloads
+ 3407941 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Templates
+ 3407943 drwxr-xr-x  1000   1000      4096  5-Apr-2019 12:11 Documents
+ 3407944 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Music
+ 3407945 drwxr-xr-x  1000   1000      4096  4-Apr-2019 11:24 Pictures
+ 3407946 drwxr-xr-x  1000   1000      4096  3-Aug-2018 16:37 Videos
+ 3408066 -rw-r--r--  1000   1000         0  3-Aug-2018 16:38 .sudo_as_admin_successful
+ 3408059 -rw-------  1000   1000     17215  5-Apr-2019 17:00 .bash_history
+X3408067 -rw-------  1000   1000      4839  5-Apr-2019 17:30 .ssh
+ 3408998 drwx------  1000   1000      4096 13-Aug-2018 23:27 .pki
+ 3409409 drwx------  1000   1000      4096 13-Aug-2018 23:28 .gnome
+ 3415202 drwx------  1000   1000      4096 24-Aug-2018 08:37 .mozilla
+ 3411080 drwxr-xr-x  1000   1000      4096 17-Feb-2019 17:36 snap
+ 3412377 drwx------     0      0      4096 12-Sep-2018 15:42 .dbus
+ 3419139 -rw-r--r--  1000   1000     18083 12-Sep-2018 23:40 materynko.ovpn
+ 3419364 -rw-r--r--     0      0        72 12-Sep-2018 23:48 .selected_editor
+ 3425267 drwx------  1000   1000      4096  4-Apr-2019 11:33 .gconf
+ 3538959 drwxrwxr-x  1000   1000      4096 26-Mar-2019 15:43 .ViberPC
+ 3543960 drwxr-xr-x  1000   1000      4096  1-Oct-2018 14:36 .aws
+ 3544256 drwx------  1000   1000      4096  2-Oct-2018 12:32 .mysql
+ 3426401 -rw-r--r--  1000   1000     82272 11-Sep-2015 11:28 alien_8.95_all.deb
+ 3431328 -rwxr-xr-x  1000   1000     73577 17-Dec-2018 18:37 passwd_gns.xlsx
+ 3431468 -rw-r--r--  1000   1000        68 17-Dec-2018 18:37 .~lock.passwd_gns.xlsx#
+ 3804132 drwxr-xr-x  1000   1000      4096 29-Dec-2018 16:51 .torbrowser
+ 3802306 drwxrwxr-x  1000   1000      4096  1-Jan-2019 20:06 .steam
+ 3410703 lrwxrwxrwx  1000   1000        30  1-Jan-2019 20:06 .steampath
+ 3410753 lrwxrwxrwx  1000   1000        28  1-Jan-2019 20:06 .steampid
+ 3417643 -rw-------  1000   1000       256  1-Jan-2019 19:46 .pulse-cookie
+ 3428527 -rw-r--r--  1000   1000   2361282  3-Jan-2019 23:25 gnsitcom_03_01_2019_23_11.sql
+ 3428750 -rw-r--r--  1000   1000  95337184  3-Jan-2019 23:35 gnsitcom.tar.gz
+ 3801145 drwxr-xr-x  1000   1000      4096 28-Jan-2019 23:42 kvm
+ 3418267 -rw-r--r--  1000   1000     18098 31-Jan-2019 17:38 darina-varicheva.ovpn
+ 3408814 -rwxr-xr-x  1000   1000 142919185 12-Feb-2019 23:37 12.mp4
+ 3419533 -rw-r--r--  1000   1000 137002554 12-Feb-2019 23:39 output.mp4
+ 4331725 drwxr-xr-x  1000   1000      4096 17-Feb-2019 09:50 mail.gns-it.com
+ 3421435 -rw-r--r--  1000   1000     13021 18-Feb-2019 22:19 materynko_gns.ovpn
+ 4333043 drwxrwxr-x  1000   1000      4096  4-Mar-2019 14:24 .synergy
+ 3421324 -rw-------  1000   1000      1024  5-Apr-2019 09:42 .rnd
+ 3427860 -rw-r--r--  1000   1000   1796759  6-Mar-2019 13:07 CatenaERP_RU.pdf
+ 3414354 -rw-------     0      0     12871  5-Apr-2019 17:09 .viminfo
+ 3429500 -rw-r--r--  1000   1000       146 11-Mar-2019 10:04 synergy.conf
+ 4333202 drwxrwxr-x  1000   1000      4096 21-Mar-2019 23:44 Calibre Library
+ 3413460 -rw-r--r--  1000   1000      3109 25-Mar-2019 16:08 config
+ 4067962 drwx------     0      0      4096 27-Mar-2019 10:37 .docker
+ 4067972 drwxrwxr-x  1000   1000      4096 27-Mar-2019 17:00 .zoom
+ 3408305 -rw-r--r--  1000   1000  85634598 28-Mar-2019 12:44 270320191728gioschool.com.sql
+ 3431949 -rw-r--r--  1000   1000    867558 31-Mar-2019 22:46 lbs_ltclub_dmc_com.sql
+ 3432026 -rw-r--r--  1000   1000  13019094 31-Mar-2019 23:15 lbs.ltclub-dmc.com.tgz
+ 3432234 -rw-r--r--  1000   1000     28322 31-Mar-2019 23:17 nginx.tgz
+ 4333495 drwx------  1000   1000      4096  2-Apr-2019 10:15 .workrave
+ 3416967 -rw-r--r--  1000   1000     23332  1-Apr-2019 17:11 php56.tgz
+ 3420207 -rw-r--r--  1000   1000      3566  1-Apr-2019 17:31 fullchain.pem
+ 3418485 -rw-r--r--  1000   1000      1704  1-Apr-2019 17:32 privkey.pem
+ 3410363 -rwxr-xr-x  1000   1000   3141152  3-Apr-2019 10:37 ngx_http_brotli_filter_module.so
+ 3411832 -rwxr-xr-x  1000   1000    114520  3-Apr-2019 10:37 ngx_http_brotli_static_module.so
+ 3419648 -rw-r--r--  1000   1000 2615526997  4-Apr-2019 15:40 040420191518.iteacrm_test.sql
+ 3423594 -rw-r--r--  1000   1000 264396274  4-Apr-2019 15:43 040420191518.iteacrm_test.sql.tgz
+ 4980737 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:31 .IdeaIC2019.1
+ 4194364 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:26 idea
+ 4980749 drwxr-xr-x  1000   1000      4096  5-Apr-2019 09:38 .java
+ 4981145 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:33 .android
+ 4981306 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:40 IdeaProjects
+ 4981449 drwxr-xr-x  1000   1000      4096  4-Apr-2019 17:41 .m2
+ 3436095 -rw-rw-r--  1000   1000       831  5-Apr-2019 09:38 .S_O_L rc
+ 5115115 drwxrwxr-x  1000   1000      4096  5-Apr-2019 12:08 dumps
+ 3432995 -rw-r--r--  1000   1000     10260  5-Apr-2019 15:34 ansible_nginx.tgz
+ 5115287 drwx------     0      0      4096  5-Apr-2019 17:26 .ansible
+Directory /home
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+ 3407874 drwxr-xr-x  1000   1000      4096  5-Apr-2019 17:29 owner
+Directory /
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 .
+       2 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 ..
+      11 drwx------     0      0     16384  3-Aug-2018 16:17 lost+found
+      12 -rw-------     0      0 2147483648  3-Aug-2018 16:17 swapfile
+ 9437185 drwxr-xr-x     0      0     12288  4-Apr-2019 16:17 etc
+ 3670017 drwxr-xr-x     0      0      4096 13-Aug-2018 23:09 media
+ 5767169 drwxr-xr-x     0      0      4096 26-Apr-2018 21:30 var
+ 11272193 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 bin
+ 15466497 drwxr-xr-x     0      0      4096 26-Mar-2019 06:44 boot
+ 8912897 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 dev
+ 3407873 drwxr-xr-x     0      0      4096  3-Aug-2018 16:19 home
+ 14155777 drwxr-xr-x     0      0      4096  1-Jan-2019 19:44 lib
+ 11403265 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 lib64
+ 12845057 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 mnt
+ 12582913 drwxr-xr-x     0      0      4096 27-Mar-2019 14:36 opt
+ 9961473 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 proc
+  786433 drwx------     0      0      4096 29-Dec-2018 16:40 root
+ 7864321 drwxr-xr-x     0      0      4096 26-Apr-2018 21:28 run
+ 5898241 drwxr-xr-x     0      0     12288 27-Mar-2019 10:07 sbin
+ 3801089 drwxr-xr-x     0      0      4096 21-Mar-2019 20:53 snap
+ 12713985 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 srv
+ 3932161 drwxr-xr-x     0      0      4096 24-Apr-2018 11:34 sys
+ 7077889 drwxrwxrwt     0      0      4096  5-Apr-2019 17:42 tmp
+ 12058625 drwxr-xr-x     0      0      4096 26-Apr-2018 21:18 usr
+      16 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img
+      15 lrwxrwxrwx     0      0        33  9-Mar-2019 10:26 initrd.img.old
+      13 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz
+      17 lrwxrwxrwx     0      0        30  9-Mar-2019 10:26 vmlinuz.old
+ 7995393 drwxrwxr-x     0      0      4096  3-Aug-2018 16:19 cdrom
+      14 -rw-r--r--     0      0         0 26-Mar-2019 15:42 0
+ 9699329 drwxr-xr-x     0      0      4096 27-Mar-2019 10:42 docker
+
+TestDisk exited normally.

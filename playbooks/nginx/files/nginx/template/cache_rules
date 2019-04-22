@@ -1,0 +1,5 @@
+#location ~* \.(js|css|jpg|jpeg|png|gif|svg|ico|txt|woff|eot|ttf|otf)$ {
+#       access_log      off;
+#       log_not_found   off;
+#}
+

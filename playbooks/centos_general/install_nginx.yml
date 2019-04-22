@@ -1,0 +1,14 @@
+---
+- hosts: spizhenko_webserver
+  tasks:
+    - name: Add epel-release repo
+      yum:
+        name: epel-release
+        state: present
+
+    - name: Install general utils
+      yum:
+        name: mc,tcpdump,nmap,
+        state: present
+
+

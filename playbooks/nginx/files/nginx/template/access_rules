@@ -1,0 +1,15 @@
+#allow internal net
+allow   10.0.26.0/24;
+#allow GNS
+allow	176.37.93.234/32;
+allow 46.164.131.46/32;
+#allow my ip
+#allow localhost
+allow 127.0.0.1/32;
+#allow client
+allow 37.17.177.126;
+allow 2.76.165.88;
+allow 37.151.235.179;
+# drop rest of the world 
+#deny    all;
+allow all;

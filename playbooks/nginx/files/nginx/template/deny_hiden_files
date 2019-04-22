@@ -1,0 +1,33 @@
+# Deny all attempts to access hidden files
+# such as .htaccess, .htpasswd, .DS_Store (Mac), .svn.
+
+        #location ~ /\.gitlab-ci.yml {
+        #       allow all;
+        #}
+
+        location ~ /\. {
+                deny all;
+        }
+
+        location = /robots.txt {
+                allow           all;
+                log_not_found   off;
+                access_log      off;
+                alias           /var/www/system/demo.gns-it.com/robots.txt;
+        }
+
+# Pretect from download agents
+        if ($http_user_agent ~* LWP::Simple|wget|libwww-perl) {
+                return 403;
+        }
+
+# Pretect from network scanners
+        if ( $http_user_agent ~* (nmap|nikto|wikto|sf|sqlmap|bsqlbf|w3af|acunetix|havij|appscan) ) {
+                return 403;
+        }
+
+# Pretect from spam
+        if ( $http_referer ~* (jewelry|viagra|nude|girl|nudit|casino|poker|porn|sex|teen|babes) ) {
+                return 403;
+        }
+

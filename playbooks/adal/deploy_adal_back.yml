@@ -1,0 +1,7 @@
+---
+- hosts: adal_php_2
+  tasks:
+    - name: deploy adal backend
+      shell: bash /home/nginx/deployjobs/deployadal.sh
+      become: yes
+      become_user: nginx

@@ -1,0 +1,15 @@
+---
+- hosts: spizhenko_webserver
+  tasks:
+
+  - name: Add repository
+    yum_repository:
+      name: MariaDB
+      description: MariaDB
+      baseurl: http://yum.mariadb.org/10.3.14/centos7-amd64
+      gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+      gpgcheck: yes
+
+  - name: install mariadb
+    yum: name=MariaDB-server,MariaDB-client state=latest
+
